@@ -13,6 +13,11 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/contact.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="style.js"></script>
 </head>
 <body>
 
@@ -176,6 +181,7 @@
 			</div>
 			<div class="row map_row">
 				<div class="col">
+						<div id="myButton"></div>
 
 					<!-- Contact Map -->
 
@@ -294,7 +300,17 @@
 		</div>
 	</footer>
 </div>
-
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '5491130952942',
+      
+            headerColor: 'crimson',
+            backgroundColor: 'crimson',
+            buttonImage: '<img src="whatsapp.svg" />'
+        });
+    });
+</script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
